@@ -29,12 +29,4 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-const testUser = new User({
-  full_name: "Aisha Mohammed",
-  email: "aisha.mohammed@example.com",
-  phone_number: "08160123456",
-  username: "aisha_m",
-  password: "kaduna2023",
-});
-
-testUser.save();
+module.exports = User;
